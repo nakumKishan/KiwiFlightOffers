@@ -80,13 +80,13 @@ extension FlightsView{
    --------------------------------------------*/
   private var destinationList: some View {
     TabView {
-      ForEach(vm.allFlights.indices) { i in
-        DestinationCard(flight:vm.allFlights[i], price:vm.allFlights[i].finalPrice)
+      ForEach(vm.allFlights) { flight in
+        DestinationCard(flight:flight, price:flight.finalPrice)
           .padding(.horizontal,30)
           .padding(.bottom, 70)
           .onTapGesture {
             showFlightDetail = true
-            selectedFlight = vm.allFlights[i]
+            selectedFlight = flight
           }
       }
     }
