@@ -13,7 +13,6 @@ Made using SwiftUI and Combine framework
 - Unique Offers each day
 - Proper Commenting documentation of each module
 - No 3rd Party Library or framework use
-- Protocol , Closures , Delegate etc Used
 - Model approach for Query parameter send to server
 
 # 🚀 App Preview (Video) :
